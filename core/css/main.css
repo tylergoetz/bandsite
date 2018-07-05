@@ -1,0 +1,11 @@
+#carousel-img {
+    opacity: 0.75;
+    filter: alpha(opacity=75); /* For IE8 and earlier */
+    max-height: 400px;
+    height:400px;
+}
+
+#carousel-img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
