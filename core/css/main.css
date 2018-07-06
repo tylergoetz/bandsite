@@ -3,6 +3,7 @@
     filter: alpha(opacity=75); /* For IE8 and earlier */
     max-height: 400px;
     height:400px;
+    margin: auto;
 }
 
 #carousel-img:hover {
