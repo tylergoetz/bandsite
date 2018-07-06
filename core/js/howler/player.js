@@ -22,7 +22,8 @@ elms.forEach(function(elm) {
 var Player = function(playlist) {
   this.playlist = playlist;
   this.index = 0;
-
+  this.height = document.getElementById("player").height;
+  this.width = document.getElementById("player").width;
   // Display the title of the first track.
   track.innerHTML = '1. ' + playlist[0].title;
 
@@ -55,7 +56,7 @@ Player.prototype = {
       sound = data.howl;
     } else {
       sound = data.howl = new Howl({
-        src: ['./audio/' + data.file + '.webm', './audio/' + data.file + '.mp3'],
+        src: ['./audio/' + data.file + '.mp3'],
         html5: true, // Force to HTML5 so that the audio can stream in (best for large files).
         onplay: function() {
           // Display the duration.
@@ -268,10 +269,10 @@ Player.prototype = {
 // Setup our new audio player class and pass it the playlist.
 var player = new Player([
   {
-    title: 'Rave Digger',
-    file: 'rave_digger',
+    title: 'Intro Remix',
+    file: 'Newcomer',
     howl: null
-  },
+  }/*
   {
     title: '80s Vibe',
     file: '80s_vibe',
@@ -281,8 +282,9 @@ var player = new Player([
     title: 'Running Out',
     file: 'running_out',
     howl: null
-  }
+  }*/
 ]);
+
 
 // Bind our player controls.
 playBtn.addEventListener('click', function() {
@@ -347,8 +349,8 @@ volume.addEventListener('touchmove', move);
 // Setup the "waveform" animation.
 var wave = new SiriWave({
   container: waveform,
-  width: window.innerWidth,
-  height: window.innerHeight * 0.1,
+  width: player.width,
+  height: player.height,
   cover: true,
   speed: 0.03,
   amplitude: 0.7,
