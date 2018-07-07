@@ -1,20 +1,50 @@
+
+:root{
+  --main-text-shadow: 5px;
+}
+
 #playlist{background:#666;}
 .active a{color:#5DB0E6;text-decoration:none;}
 li a{color:#eeeedd;background:#333;padding:5px;display:block;}
 li a:hover{text-decoration:none;}
 
-body{
+html{
   background-image: url("../img/back1.png");
-  color:white;
+  background-color:transparent !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+
+
+}
+body{
+  background-color:transparent !important;
+
+  text-align:center !important;
+  font-family: 'Cinzel', serif;
+  color: white;
+  stroke(4, )
 }
 
 #name{
   position:relative;
-  left:-50%;
+  left:25%;
 }
 
 #carousel-img{
-  height: 394px;
-
+  height: 750px;
   width:100%;
+}
+#row2{
+  text-align:center !important;
+}
+#row1{
+  text-align:center !important;
+
+}
+#img1{
+
 }
