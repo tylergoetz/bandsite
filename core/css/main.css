@@ -1,50 +1,28 @@
-
-:root{
-  --main-text-shadow: 5px;
+html{
+  background-color:black;
 }
 
-#playlist{background:#666;}
-.active a{color:#5DB0E6;text-decoration:none;}
-li a{color:#eeeedd;background:#333;padding:5px;display:block;}
-li a:hover{text-decoration:none;}
-
-html{
+#mainContainer{
+  background-color:black;
   background-image: url("../img/back1.png");
-  background-color:transparent !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-
-
-
+  background-repeat:no-repeat;
+  background-color: black;
 }
 body{
   background-color:transparent !important;
-
   text-align:center !important;
   font-family: 'Cinzel', serif;
   color: white;
-  stroke(4, )
-}
-
-#name{
-  position:relative;
-  left:25%;
-}
-
-#carousel-img{
-  height: 750px;
-  width:100%;
+  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
 }
 #row2{
   text-align:center !important;
 }
 #row1{
   text-align:center !important;
-
-}
-#img1{
 
 }
