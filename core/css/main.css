@@ -27,3 +27,18 @@ body{
 
 }
 .img-thumbnail{background-color:black;}
+.shows{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+img{
+  image-orientation: from-image; /* Use EXIF data from the image */
+}
+
+#bandName{
+   animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
