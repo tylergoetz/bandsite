@@ -1,9 +1,9 @@
 # bandsite
 ## Info
-###Frameworks in use
+### Frameworks in use
 -Bootstrap
 -JQuery
-###Desc
+### Desc
 A site I made to test out some bootstrap skills that I have been working on, I really wanted a one-page design.
 I used bootstrap for scalability, and jquery to make things easier. All-in-all bootstrap made this quite an easy experience.
 
