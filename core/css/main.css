@@ -1,23 +1,22 @@
 html{
-  background-color:black;
 }
 
 #mainContainer{
-  background-color:black;
-  background-image: url("../img/back1.png");
+  /*background-image: url("../img/back1.pg");**/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-repeat:no-repeat;
-  background-color: black;
+
 }
 body{
-  background-color:transparent !important;
+  /*background-color:transparent !important;*/
   text-align:center !important;
   font-family: 'Cinzel', serif;
-  color: white;
-  text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;
+  color: black;
+  /*text-shadow: 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black, 0 0 4px black;*/
+  
 }
 #row2{
   text-align:center !important;
@@ -27,9 +26,6 @@ body{
 
 }
 .img-thumbnail{background-color:black;}
-.shows{
-  background-color: rgba(0, 0, 0, 0.7);
-}
 img{
   image-orientation: from-image; /* Use EXIF data from the image */
 }

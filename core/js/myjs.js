@@ -4,7 +4,7 @@ function changeText() {
   var el = document.getElementById('bandName')
   $('#bandName').fadeOut('slow', function() {
     el.innerHTML = 'Band Bio stuff here'
-    el.className = 'diplay-4'
+    el.className = 'diplay-2'
     $('#bandName').fadeIn('slow', function() {})
   })
 }
@@ -12,8 +12,8 @@ function changeText() {
 function restoreText() {
   var el = document.getElementById('bandName')
   $('#bandName').fadeOut('slow', function() {
-    el.innerHTML = 'NEWCOMER'
-    el.className = 'display-4'
+    el.innerHTML = 'Gunner Bassinger'
+    el.className = 'display-3'
     $('#bandName').fadeIn('slow', function() {})
   })
 }
@@ -21,7 +21,7 @@ function restoreText() {
 $(window).scroll(function() {
   if (runOnce === true) {
     $('html, body').animate({
-      scrollTop: $('#row2').offset().top
+      scrollTop: $('#music').offset().top
     }, 850)
     console.log('fired: ' + runOnce)
     runOnce = false
