@@ -1,23 +1,25 @@
-var runOnce = true
-
-function changeText() {
-  var el = document.getElementById('bandName')
-  $('#bandName').fadeOut('slow', function() {
-    el.innerHTML = 'Band Bio stuff here'
-    el.className = 'diplay-2'
-    $('#bandName').fadeIn('slow', function() {})
-  })
+var mobile = false;
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {  //if mobile client
+  mobile = true;
+  console.log('mobile detected');
+ }
+$('#bandName').css({opacity: 1});
+if(!mobile){
+  $('#bandName').css({opacity: 0});
+  function changeText() {
+    var el = document.getElementById('bandName')
+    $('#bandName').animate({opacity: 1});
+  }
+  
+  function restoreText() {
+    var el = document.getElementById('bandName')
+    $('#bandName').animate({opacity: 0});
+  }
+}
+else{
 }
 
-function restoreText() {
-  var el = document.getElementById('bandName')
-  $('#bandName').fadeOut('slow', function() {
-    el.innerHTML = 'Gunner Bassinger'
-    el.className = 'display-3'
-    $('#bandName').fadeIn('slow', function() {})
-  })
-}
-
+/*
 $(window).scroll(function() {
   if (runOnce === true) {
     $('html, body').animate({
@@ -27,3 +29,5 @@ $(window).scroll(function() {
     runOnce = false
   }
 })
+*/
+
