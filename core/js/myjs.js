@@ -5,7 +5,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
  }
 $('#bandName').css({opacity: 1});
 if(!mobile){
-  $('#bandName').css({opacity: 0});
+  $('#bandName').css({opacity: 1});
   function changeText() {
     var el = document.getElementById('bandName')
     $('#bandName').animate({opacity: 1});
@@ -18,6 +18,9 @@ if(!mobile){
 }
 else{
 }
+$('#contact').click(function(){
+  window.location.href = 'mailto:gunner.basinger@gmail.com?subject=Hello there&body=This is the body';
+})
 
 /*
 $(window).scroll(function() {
